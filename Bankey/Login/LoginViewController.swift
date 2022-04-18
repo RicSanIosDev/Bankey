@@ -37,7 +37,7 @@ extension LoginViewController {
         signInButton.translatesAutoresizingMaskIntoConstraints = false
         signInButton.configuration = .filled()
         signInButton.configuration?.imagePadding = 8
-        signInButton.setTitle("Sign In", for: [])
+        signInButton.setTitle("Sign In.", for: [])
         signInButton.addTarget(self, action: #selector(signInTapped), for: .primaryActionTriggered)
 
         errorMessageLabel.translatesAutoresizingMaskIntoConstraints = false
