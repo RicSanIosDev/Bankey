@@ -28,8 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         onboardingContainerVC.delegate = self
         dummyVC.loguotDelegate = self
 
-        window?.rootViewController = mainVC
-
+//        window?.rootViewController = mainVC
+        window?.rootViewController = AccountSummaryViewController()
         return true
     }
 }
