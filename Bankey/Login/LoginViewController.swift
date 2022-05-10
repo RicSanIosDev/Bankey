@@ -7,11 +7,21 @@
 
 import UIKit
 
+protocol LogoutDelegate: AnyObject {
+    func didLogout()
+}
+
+protocol LoginViewControllerDelegate: AnyObject {
+    func didLogin()
+}
+
 class LoginViewController: UIViewController {
 
     let loginView = LoginView()
     let signInButton = UIButton(type: .system)
     let errorMessageLabel = UILabel()
+
+    weak var delegate: LoginViewControllerDelegate?
 
     var username: String? {
         return loginView.usernameTextFiled.text
@@ -25,6 +35,13 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         style()
         layout()
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        signInButton.configuration?.showsActivityIndicator = false
+        loginView.usernameTextFiled.text = nil
+        loginView.passwordTextFiled.text = nil
     }
 
 
@@ -76,7 +93,6 @@ extension LoginViewController {
 extension LoginViewController {
     @objc func signInTapped(sender: UIButton) {
         errorMessageLabel.isHidden = true
-        signInButton.configuration?.showsActivityIndicator = false
         login()
     }
 
@@ -86,12 +102,16 @@ extension LoginViewController {
             return
         }
 
-        if username.isEmpty || password.isEmpty {
-            confugureView(withMessage: "Username or password cannot be blank")
-        }
+//        if username.isEmpty || password.isEmpty {
+//            confugureView(withMessage: "Username or password cannot be blank")
+//            return
+//        }
 
         if username == "Test" && password == "12345" {
             signInButton.configuration?.showsActivityIndicator = true
+            delegate?.didLogin()
+        } else {
+            confugureView(withMessage: "Username or password cannot be blank")
         }
     }
 

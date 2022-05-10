@@ -14,6 +14,10 @@
 		442C8E91280DCFFB00356F35 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442C8E90280DCFFB00356F35 /* LoginView.swift */; };
 		442C8E94280DFC7200356F35 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442C8E93280DFC7200356F35 /* OnboardingContainerViewController.swift */; };
 		442C8E96280E121B00356F35 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442C8E95280E121B00356F35 /* OnboardingViewController.swift */; };
+		442C8E98280E246C00356F35 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442C8E97280E246C00356F35 /* DummyViewController.swift */; };
+		442C8E9B280E2C0100356F35 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442C8E9A280E2C0100356F35 /* LocalState.swift */; };
+		44EB6E27282AC92F00DFB047 /* UIVIewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EB6E26282AC92F00DFB047 /* UIVIewController+Utils.swift */; };
+		44EB6E29282ACB9100DFB047 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EB6E28282ACB9100DFB047 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		442C8E90280DCFFB00356F35 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		442C8E93280DFC7200356F35 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		442C8E95280E121B00356F35 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		442C8E97280E246C00356F35 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		442C8E9A280E2C0100356F35 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
+		44EB6E26282AC92F00DFB047 /* UIVIewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Utils.swift"; sourceTree = "<group>"; };
+		44EB6E28282ACB9100DFB047 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +66,12 @@
 		442C8E78280DCC9200356F35 /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
-				442C8E92280DFC3000356F35 /* Onboarding */,
-				442C8E8E280DCFA300356F35 /* Files */,
-				442C8E8F280DCFD100356F35 /* Login */,
 				442C8E79280DCC9200356F35 /* AppDelegate.swift */,
+				442C8E8F280DCFD100356F35 /* Login */,
+				442C8E92280DFC3000356F35 /* Onboarding */,
+				442C8E99280E2BEF00356F35 /* Utils */,
+				442C8E8E280DCFA300356F35 /* Files */,
+				44EB6E28282ACB9100DFB047 /* MainViewController.swift */,
 			);
 			path = Bankey;
 			sourceTree = "<group>";
@@ -81,6 +91,7 @@
 			children = (
 				442C8E7D280DCC9200356F35 /* LoginViewController.swift */,
 				442C8E90280DCFFB00356F35 /* LoginView.swift */,
+				442C8E97280E246C00356F35 /* DummyViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -92,6 +103,15 @@
 				442C8E95280E121B00356F35 /* OnboardingViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		442C8E99280E2BEF00356F35 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				442C8E9A280E2C0100356F35 /* LocalState.swift */,
+				44EB6E26282AC92F00DFB047 /* UIVIewController+Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,9 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44EB6E27282AC92F00DFB047 /* UIVIewController+Utils.swift in Sources */,
 				442C8E91280DCFFB00356F35 /* LoginView.swift in Sources */,
+				442C8E9B280E2C0100356F35 /* LocalState.swift in Sources */,
+				442C8E98280E246C00356F35 /* DummyViewController.swift in Sources */,
 				442C8E7E280DCC9200356F35 /* LoginViewController.swift in Sources */,
 				442C8E96280E121B00356F35 /* OnboardingViewController.swift in Sources */,
+				44EB6E29282ACB9100DFB047 /* MainViewController.swift in Sources */,
 				442C8E7A280DCC9200356F35 /* AppDelegate.swift in Sources */,
 				442C8E94280DFC7200356F35 /* OnboardingContainerViewController.swift in Sources */,
 			);
