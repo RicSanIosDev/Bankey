@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4400E41F28447B6E001336DF /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4400E41E28447B6E001336DF /* ShakeyBellView.swift */; };
 		442C8E7A280DCC9200356F35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442C8E79280DCC9200356F35 /* AppDelegate.swift */; };
 		442C8E7E280DCC9200356F35 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442C8E7D280DCC9200356F35 /* LoginViewController.swift */; };
 		442C8E83280DCC9300356F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442C8E82280DCC9300356F35 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4400E41E28447B6E001336DF /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
 		442C8E76280DCC9200356F35 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		442C8E79280DCC9200356F35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		442C8E7D280DCC9200356F35 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4400E41D28447B4D001336DF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4400E41E28447B6E001336DF /* ShakeyBellView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		442C8E6D280DCC9200356F35 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +120,7 @@
 				442C8E92280DFC3000356F35 /* Onboarding */,
 				44EB6E2A282AD6F300DFB047 /* AccountSummary */,
 				442C8E99280E2BEF00356F35 /* Utils */,
+				4400E41D28447B4D001336DF /* Components */,
 				442C8E8E280DCFA300356F35 /* Files */,
 			);
 			path = Bankey;
@@ -304,6 +315,7 @@
 				442C8E7E280DCC9200356F35 /* LoginViewController.swift in Sources */,
 				44EACB0B283DDFA300D0D6AF /* NSNotificationName.swift in Sources */,
 				44EACAF8283DC45B00D0D6AF /* Decimal+Utils.swift in Sources */,
+				4400E41F28447B6E001336DF /* ShakeyBellView.swift in Sources */,
 				44EACAF6283DB00800D0D6AF /* AccountSummaryCell.swift in Sources */,
 				442C8E96280E121B00356F35 /* OnboardingViewController.swift in Sources */,
 				44EB6E29282ACB9100DFB047 /* MainViewController.swift in Sources */,

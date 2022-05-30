@@ -160,10 +160,10 @@ extension LoginViewController {
             return
         }
 
-//        if username.isEmpty || password.isEmpty {
-//            confugureView(withMessage: "Username or password cannot be blank")
-//            return
-//        }
+        if username.isEmpty || password.isEmpty {
+            confugureView(withMessage: "Username or password cannot be blank")
+            return
+        }
 
         if username == "Test" && password == "12345" {
             signInButton.configuration?.showsActivityIndicator = true
